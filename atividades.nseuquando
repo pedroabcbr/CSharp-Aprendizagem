@@ -1,0 +1,73 @@
+//atividades que eu nao lembro quando
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Atividades_05092024
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Imprima a mensagem: é preciso fazer todos os exercicos da aula
+            Console.WriteLine("Atividade 1");
+            Console.WriteLine("É PRECISO FAZER TODOS OS EXERCICIOS PARA APRENDER");
+            Console.ReadKey();
+
+            //imprima seu nome
+            Console.WriteLine("Atividade 2");
+            Console.WriteLine("O PH TA NA AREA KRRRLLLLL");
+            Console.ReadKey();
+
+            //imprima o produto de 28 x 43
+            Console.WriteLine("Atividade 3");
+            Console.WriteLine("O produto entre 28 e 43 é {0}", 28 * 43);
+            Console.ReadKey();
+
+            // iimprima a media aritmetica entre 8,9 e 7
+            Console.WriteLine("Atividade 4");
+            Console.WriteLine("a soma entre 8, 9 e 7 é {0}", 7 + 8 + 9 / 3);
+            Console.ReadKey();
+
+            //ler dois numeros inteiros e imprimir o produto
+            int i_Num1 = 0;
+            int i_Num2 = 0;
+            Console.WriteLine("atividade 5");
+
+            Console.WriteLine("entre com o primeito numero");
+            i_Num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("entre com o segundo numero");
+            i_Num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nResultado entre o produto de {0} e {1} é {2}", i_Num1, i_Num2, i_Num1 * i_Num2);
+            Console.ReadKey();
+
+
+            //obter o valor da soma de 3 numeros
+            int i_Nm1 = 0;
+            int i_Nm2 = 0;
+            int i_Nm3 = 0;
+            Console.WriteLine("Atividade 6");
+
+            Console.WriteLine("entre com o primeito numero");
+            i_Nm1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("entre com o segundo numero");
+            i_Nm2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("entre com o segundo numero");
+            i_Nm3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nResultado da soma de {0}, {1} e {2} é {3}", i_Nm1, i_Nm2, i_Nm3, i_Nm1 + i_Nm2 + i_Nm3);
+            Console.ReadKey();
+
+            Console.Write.Line("Atividade 9 (por que sim kkkkkkkkkk)")
+            console.write.line("\nnao sei o que fazer aqui kkkk")
+        }
+    }
+}
+pedroabcbr 19/09/2024 
