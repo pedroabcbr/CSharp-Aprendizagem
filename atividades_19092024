@@ -1,0 +1,226 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Configuration;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace atividades_19092024
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                 // 1.Escreva um programa para ler 2 valores(considere que não serão informados valores iguais) e escrever o maior deles.
+            /*
+            int num_1 = 0;
+            int num_2 = 0;
+
+            Console.WriteLine("Ola,escreva o primeiro número");
+            num_1 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Agora escreva o segundo número");
+            num_2 = Convert.ToInt16(Console.ReadLine());
+
+            if (num_1 > num_2)
+            {
+                Console.WriteLine("O número '{0}' é maior que o número {1}", num_1, num_2);
+            }
+            
+            else
+            {
+                Console.WriteLine("o número '{0} é maior que o número '{1}'", num_2, num_1);
+            }
+            Console.ReadLine();
+            */
+
+
+                //2.Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano(não é necessário considerar o mês em que ela nasceu).
+            /*
+            int i_nasc = 0;
+            int i_anoagora = 2024;
+
+            Console.WriteLine("Digite o ano que você nasceu");
+            i_nasc = Convert.ToInt16(Console.ReadLine());
+
+            if (i_anoagora - i_nasc > 16)
+            {
+                Console.WriteLine("Você pode votar esse ano");
+            }
+            else
+            {
+                Console.WriteLine("Você não pode votar esse ano");
+            }
+            Console.ReadLine();
+            */
+
+
+                //3.Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o número 1234.Devem ser impressas as seguintes mensagens: ACESSO PERMITIDO caso a senha seja válida.ACESSO NEGADO caso a senha seja inválida.
+            /*
+            int i_senha1 == 12345;
+
+            Console.WriteLine("Digite sua senha");
+            i_senha1 = Convert.ToInt16(Console.ReadLine());
+
+            if (i_senha1 == 12345)
+            {
+                Console.WriteLine("ACESSO PERMITIDO");
+            }
+            else
+            {
+                Console.WriteLine("ACESSO NEGADO");
+            }
+            Console.ReadLine();
+            */
+
+                //4.As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra.
+            /*
+            double d_macas = 0;
+
+
+            Console.WriteLine("Quantas maçans você ira comprar?"); 
+            d_macas = Convert.ToDouble(Console.ReadLine());
+
+            if (d_macas <= 11)
+            {
+                Console.WriteLine("o valor total ficou R${0}.", d_macas * 0.30);
+            }
+            else
+            {
+                Console.WriteLine("o valor total ficou R${0}.", d_macas * 0.25);
+            }
+            Console.ReadLine();
+            */
+
+                //5.Escreva um programa para ler 3 valores inteiros(considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
+
+            
+            int i_num1 = 0;
+            int i_num2 = 0; 
+            int i_num3 = 0;
+
+            int i_pri = 0;
+            int i_seg = 0;
+            int i_tri = 0;
+
+            Console.WriteLine("Escreva o 1° número");
+            i_num1 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Escreva o 2° número");
+            i_num2 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Escreva o 3° número");
+            i_num3 = Convert.ToInt16(Console.ReadLine());
+
+            if (i_num3 > i_num2 && i_num3 > i_num1)
+            {
+                if (i_num2 > i_num1)
+                {
+                    i_pri = i_num1;
+                    i_seg = i_num2;
+                    i_tri = i_num3;
+
+                }
+                else
+                {
+                    i_pri = i_num2;
+                    i_seg = i_num1;
+                    i_tri = i_num3;
+                }
+            }
+            else
+            {
+                if (i_num2 > i_num1 && i_num2 > i_num3)
+                {
+                    if (i_num1 > i_num3)
+                    {   
+                        i_pri = i_num3;
+                        i_seg = i_num1;
+                        i_tri = i_num2;
+                    }
+                    else
+                    {
+                        i_pri = i_num1;
+                        i_seg = i_num3;
+                        i_tri = i_num2;
+                    }
+                }
+                else (i_num2 > i_num3)
+                {
+                    i_pri = i_num3;
+                    i_seg = i_num2;
+                    i_tri = i_num1;
+                }
+            }
+        
+            Console.ReadLine();
+
+
+
+                //6.Tendo como entrada a altura e o sexo(codificado da seguinte forma: 1:feminino 2:masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes Fórmulas: -para homens: (72.7 * Altura) – 58 - para mulheres: (62.1 * Altura) – 44.7
+
+            /*
+            double d_altura = 0;
+            string s_sexo = "";
+
+            Console.WriteLine("Digite sua altura");
+            d_altura = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite se seu sexo é masculino ou feminino");
+            s_sexo = Console.ReadLine();
+
+            if (s_sexo == "masculino")
+            {
+                Console.WriteLine("seu peso ideal é'{0}'", (d_altura * 72.7) - 58);
+            }
+            else
+            {
+                Console.WriteLine("seu peso ideal é '{0}'", (d_altura * 62.1) - 44.7);
+            }
+            Console.ReadLine();
+
+            */
+
+
+
+                //7.Escreva um programa para ler 3 valores inteiros e escrever o maior deles.Considere que o usuário não informará valores iguais.  
+
+            /*
+            int i_num1 = 0;
+            int i_num2 = 0;
+            int i_num3 = 0;
+
+            Console.WriteLine("digite o 1° número");
+            i_num1 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("digite o 2° número");
+            i_num2 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("digite o 3° número");
+            i_num3 = Convert.ToInt16(Console.ReadLine());
+
+            if (i_num1 > i_num2 & i_num1 > i_num3)
+            {
+                Console.WriteLine("O número {0} é o maior", i_num1);
+            }
+
+            else
+            {
+                if (i_num2 > i_num1 & i_num2 > i_num3)
+                {
+                    Console.WriteLine("O número {0} é o maior", i_num2);
+                }
+                else
+                {
+                    Console.WriteLine("o número {0} é o maior", i_num3);
+                }
+            }
+            Console.ReadLine();
+            */
+
+
+                //8.Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é equilátero, isósceles ou escaleno.Sendo que: − Triângulo Equilátero: possui os 3 lados iguais. − Triângulo Isóscele: possui 2 lados iguais. − Triângulo Escaleno: possui 3 lados diferentes.
+                
+
+
+        }
+    }
+}
