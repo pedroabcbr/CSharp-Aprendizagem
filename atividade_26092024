@@ -17,6 +17,8 @@ namespace atividades_26092024
 
             /*
 
+            // 1) Cálculo de Média 
+
             int i_nota1 = 0;
             int i_nota2 = 0;
             int i_nota3 = 0;
@@ -55,13 +57,12 @@ namespace atividades_26092024
             Console.ReadLine();
 
 
-            */
+            
 
 
 
             // 2) Classificação de Idade - concluida
 
-            /*
             int i_idade = 0;
 
             Console.WriteLine("digite a sua idade");
@@ -95,31 +96,49 @@ namespace atividades_26092024
             
             Console.ReadLine();
 
-            */
+            
 
-            /*
+            
             // 3) Cálculo de Desconto
 
             double d_compra = 0;
-            double d_desc1 = 0;
-            double d_desc2 = 0;
-            double d_desc3 = 0;
-            double d_ValFinal = 0;
 
             Console.WriteLine("digite o valor da compra");
             d_compra = Convert.ToDouble(Console.ReadLine());
 
-            if (d_compra <= 100)
+            if (d_compra > 0 && d_compra <= 100)
             {
-                d_ValFinal = d_compra - 5 
+                Console.WriteLine("O desconto foi de 5% sendo R${0} assim o valor final foi de R${1}", d_compra * 5 / 100, d_compra - d_compra * 5 / 100);
+
+            }
+            else
+            {
+                if (d_compra >= 100.01 && d_compra <= 500)
+                {
+                    Console.WriteLine("O desconto foi de 10% sendo R${0} assim o valor final foi de R${1}", d_compra * 10 / 100, d_compra - d_compra * 10 / 100);
+
+                }
+                else
+                {
+                    if (d_compra > 500)
+                    {
+                        Console.WriteLine("O desconto foi de 15% sendo R${0} assim o valor final foi de R${1}", d_compra * 15 / 100, d_compra - d_compra * 15 / 100);
+                    }
+                    else
+                    {
+                        Console.WriteLine("O valor inserido pra compra é invalido");
+                    }
+                }
             }
 
-            */
+            Console.ReadLine();
+
+
 
 
             // 4) Conversão de Temperatura 
 
-            /*
+            
              
             double d_cel = 0;
             double d_fah = 0;
@@ -143,22 +162,55 @@ namespace atividades_26092024
             }
             Console.ReadLine();
 
-            */
+            
 
 
             // 5) Calculadora Simples 
 
-            int i_num1 = 0;
-            int i_num2 = 0;
+            double d_Num1 = 0;
+            double d_Num2 = 0;
+            string s_Multiplicador = "";
 
-            Console.WriteLine("Digite o 1° número");
-            i_num1 = Convert.ToUInt16(Console.ReadLine());
-            Console.WriteLine("Digite o 2° número");
-            i_num2 = Convert.ToUInt16(Console.ReadLine());
-            Console.WriteLine("diga se voce quer uma Adição, Subtração, Divisão ou Multiplicação");
+            Console.WriteLine("Insira o primeiro número: ");
+            d_Num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira o segundo número: ");
+            d_Num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Qual será o operador matemático: ");
+            s_Multiplicador = Convert.ToString(Console.ReadLine());
 
+            if (s_Multiplicador == "*")
+            {
+                Console.Write("o Resultado é: {0}", d_Num1 * d_Num2);
+            }
+            else
+            {
+                if (s_Multiplicador == "+")
+                {
+                    Console.Write("o Resultado é: {0}", d_Num1 + d_Num2);
+                }
+                else
+                {
+                    if (s_Multiplicador == "-")
+                    {
+                        Console.Write("o Resultado é: {0}", d_Num1 - d_Num2);
+                    }
+                    else
+                    {
+                        if (s_Multiplicador == "/")
+                        {
+                            Console.Write("o Resultado é: {0}", d_Num1 / d_Num2);
+                        }
+                        else
+                        {
+                            Console.Write("Essa operação não pode ser feita.");
+                        }
+                    }
 
+                }
 
+            }
+
+            Console.ReadLine();
 
         }
     }
