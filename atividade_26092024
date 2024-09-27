@@ -1,0 +1,165 @@
+// atividade_26092024
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace atividades_26092024
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1) Cálculo de Média 
+
+            /*
+
+            int i_nota1 = 0;
+            int i_nota2 = 0;
+            int i_nota3 = 0;
+
+            Console.WriteLine("insira a primeira nota: ");
+            i_nota1 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("insira a segunda nota: ");
+            i_nota2 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("insira a terceira nota: ");
+            i_nota3 = Convert.ToInt16(Console.ReadLine());
+            double i_media = ((i_nota1 + i_nota2 + i_nota3) / 3);
+
+            if (i_media >= 7 && i_media <= 10)
+            {
+                Console.Write("APROVADO");
+            }
+            else
+            {
+                if (i_media >= 5 && i_media < 7)
+                {
+                    Console.Write("EM RECUPERAÇÃO");
+                }
+                else
+                {
+                    if (i_media < 5)
+                    {
+                        Console.Write("REPROVADO");
+                    }
+                    else
+                    {
+                        Console.Write("INSIRA UM NÚMERO UM NÚMERO MENOR QUE 10!");
+                    }
+                }
+
+            }
+            Console.ReadLine();
+
+
+            */
+
+
+
+            // 2) Classificação de Idade - concluida
+
+            /*
+            int i_idade = 0;
+
+            Console.WriteLine("digite a sua idade");
+            i_idade = Convert.ToInt16(Console.ReadLine());
+
+            if (i_idade <= 12)
+            {
+                Console.WriteLine("Essa pessoa é considerada uma criança");
+            }
+            else
+            {
+
+                if (i_idade >= 13 && i_idade <= 17)
+                {
+                    Console.WriteLine("Essa pessoa é considerada um adolescente");
+
+                }
+                else
+                {
+                    if (i_idade >= 18 && i_idade <= 64)
+                    {
+                        Console.WriteLine("Essa pessoa é considerada adulta");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Essa pessoa é considerada idosa");
+                    }
+
+                }
+            }
+            
+            Console.ReadLine();
+
+            */
+
+            /*
+            // 3) Cálculo de Desconto
+
+            double d_compra = 0;
+            double d_desc1 = 0;
+            double d_desc2 = 0;
+            double d_desc3 = 0;
+            double d_ValFinal = 0;
+
+            Console.WriteLine("digite o valor da compra");
+            d_compra = Convert.ToDouble(Console.ReadLine());
+
+            if (d_compra <= 100)
+            {
+                d_ValFinal = d_compra - 5 
+            }
+
+            */
+
+
+            // 4) Conversão de Temperatura 
+
+            /*
+             
+            double d_cel = 0;
+            double d_fah = 0;
+
+            Console.WriteLine("Insira uma temperatura em Celsius");
+            d_cel = Convert.ToDouble(Console.ReadLine());
+
+            d_fah = d_cel * 9/5 + 32;
+
+            if (d_fah > 30)
+            {
+                Console.WriteLine("Essa temperatura é quente");
+            }
+            else
+            {
+                if (d_fah < 30 && d_fah >= 15)
+                {
+                    Console.WriteLine("Essa temperatura é amena");
+                }
+
+            }
+            Console.ReadLine();
+
+            */
+
+
+            // 5) Calculadora Simples 
+
+            int i_num1 = 0;
+            int i_num2 = 0;
+
+            Console.WriteLine("Digite o 1° número");
+            i_num1 = Convert.ToUInt16(Console.ReadLine());
+            Console.WriteLine("Digite o 2° número");
+            i_num2 = Convert.ToUInt16(Console.ReadLine());
+            Console.WriteLine("diga se voce quer uma Adição, Subtração, Divisão ou Multiplicação");
+
+
+
+
+        }
+    }
+}
