@@ -1,5 +1,3 @@
-atividades_03102024
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -160,7 +158,7 @@ namespace atividade_03102024
                 }
                 else
                 {
-                    if (d_valorDaNotaFiscal > 3000 && d_valorDaNotaFiscal <= 6999)
+                    if (d_valorDaNotaFiscal > 3000 && valorDaNotaFiscal <= 6999)
                     {
                         d_valorComImposto = d_valorDaNotaFiscal * 1.28;
                         d_valorDiferença = d_valorComImposto - d_valorDaNotaFiscal;
@@ -182,7 +180,8 @@ namespace atividade_03102024
                 }
             }
             Console.ReadLine();
-
+            
+            
             /*
                 2)	Crie uma calculadora que execute as quatro operações matemáticas. Através de um menu o usuário 
                 poderá escolher: 
@@ -207,7 +206,7 @@ namespace atividade_03102024
             Console.WriteLine("Tecle 5 para sair do programa.\n");
 
             Console.Write("Entre com sua Operação: ");
-            s_Opera = Console.ReadLine().ToUpper();
+            s_Opera = Console.ReadLine();
 
             if (s_Opera == "1" || s_Opera == "2" || s_Opera == "3" || s_Opera == "4" || s_Opera == "5")
             {
@@ -267,8 +266,168 @@ namespace atividade_03102024
                 Console.WriteLine("Operação invalida.");
             }
             Console.ReadLine();
+            
 
-        }
+
+            //  3) Crie um programa que o usuário digita um número entre 1 e 10. E logo após o programa escreve na tela o ordinal correspondente. 
+
+            string s_numero = "";
+
+            Console.WriteLine("Escreva um número entre 1 e 10");
+            s_numero = Console.ReadLine();
+
+            switch (s_numero)
+            {
+                case "1":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Primeiro");
+                        break;
+                    }
+
+                case "2":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é:Segundo");
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é:Terceiro");
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Quarto");
+                        break;
+                    }
+                case "5":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Quinto");
+                        break;
+                    }
+                case "6":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Sexto");
+                        break;
+                    }
+                case "7":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Sétimo");
+                        break;
+                    }
+                case "8":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Oitavo");
+                        break;
+                    }
+                case "9":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Nono");
+                        break;
+                    }
+                case "10":
+                    {
+                        Console.WriteLine("Seu ordinal correspondente é: Décimo");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("O número citado não está cadastrado");
+                        break;
+                    }
+
+
+            }
+
+            Console.ReadLine();
+
+
+
+
+            // 4)Crie um programa que o usuário digita um número entre 1 e 12. E logo após o programa escreve na tela o mês correspondente. 
+            
+
+            s_numero = "";
+
+            Console.WriteLine("Escreva um número entre 1 e 12.");
+            s_numero = Console.ReadLine();
+
+            switch(s_numero)
+            {
+                case "1":
+                    {
+                        Console.WriteLine("O mês correspondente é Janeiro");
+                        break;                    
+                    }
+
+                case "2":
+                    {
+                        Console.WriteLine("O mês correspondente é Fevereiro");
+                        break;
+                    }
+                case "3":
+                    {
+                        Console.WriteLine("O mês correspondente é Março");
+                        break;
+                    }
+                case "4":
+                    {
+                        Console.WriteLine("O mês correspondente é Abril");
+                        break;
+                    }
+                case "5":
+                    {
+                        Console.WriteLine("O mês correspondente é Maio");
+                        break;
+                    }
+                case "6":
+                    {
+                        Console.WriteLine("O mês correspondente é Junho");
+                        break;
+                    }
+                case "7":
+                    {
+                        Console.WriteLine("O mês correspondente é Julho");
+                        break;
+                    }
+                case "8":
+                    {
+                        Console.WriteLine("O mês correspondente é Agosto");
+                        break;
+                    }
+                case "9":
+                    {
+                        Console.WriteLine("O mês correspondente é Setembro");
+                        break;
+                    }
+                case "10":
+                    {
+                        Console.WriteLine("O mês correspondente é Outubro");
+                        break;
+                    }
+                case "11":
+                    {
+                        Console.WriteLine("O mês correspondente é Novembro");
+                        break;
+                    }
+                case "12":
+                    {
+                        Console.WriteLine("O mês correspondente é Dezembro");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("O número citado é invalido para essa operação");
+                        break;
+                    }
+
+
+            }
+
+            Console.ReadLine();
+            
+
+        } 
         
     }
 }
+
