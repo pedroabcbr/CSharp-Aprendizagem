@@ -1,0 +1,274 @@
+atividades_03102024
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace atividade_03102024
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // usando switch para açoes de escolhas - exemplos
+            /*
+            string s_cor = "";
+
+            Console.WriteLine("Digite uma cor qualquer no idioma ingles: ");
+            s_cor = Console.ReadLine().ToUpper();
+
+
+            
+            switch (s_cor)
+            {
+                case "RED":
+                    {
+                        Console.WriteLine("VERMELHO");
+                        break;
+                    }
+
+                case "GREEN":
+                    {
+                        Console.WriteLine("VERDE");
+                        break;
+                    }
+
+                case "GRAY":
+                    {
+                        Console.WriteLine("CINZA");
+                        break;
+                    }
+
+                case "BLACK":
+                    {
+                        Console.WriteLine("PRETO");
+                        break;
+                    }
+
+                case "WHITE":
+                    {
+                        Console.WriteLine("BRANCO");
+                        break;
+                    }
+
+                case "PINK":
+                    {
+                        Console.WriteLine("ROSA");
+                        break;
+                    }
+
+                case "YELLOW":
+                    {
+                        Console.WriteLine("AMARELO");
+                        break;
+                    }
+
+                default:
+                    {
+                        Console.WriteLine("Cor não cadastrada");
+                        break;
+                    }
+            }
+            Console.ReadLine();
+
+            
+
+            Console.ReadLine();
+
+            string s_Cargo = "";
+            double d_SalAnt = 0;
+            double d_SalNovo = 0;
+            double d_SalDif = 0;
+
+            Console.WriteLine("Digite o codigo do cargo");
+            s_Cargo = Console.ReadLine().ToUpper();
+
+            Console.WriteLine("Digite o antigo salario");
+            d_SalAnt = Convert.ToInt16(Console.ReadLine);
+
+
+            switch
+            {
+                case "D1":
+                {
+                        d_SalNovo = d_SalAnt * 1.3;
+                }
+
+                case "G1":
+                {
+                        d_SalNovo = d_SalAnt * 1.5;
+                }
+
+                case "C1":
+                {
+                        d_SalNovo = d_SalAnt * 1.3;
+                }
+
+                case "E1":
+                {
+                        d_SalNovo = d_SalAnt * 1.3
+                };
+
+                default:
+                {
+                        Console.WriteLine("Codigo do cargo invalido");
+                }
+                    
+            }
+
+            d_SaDif = d_SalNovo - d_SalAnt;
+            Console.Write("O salário Antigo é {0:c}.\nO salário Novo é {1:c}.\nA diferença é {2:c}.", d_SalAnt, d_SalNov, d_SalDif);
+            Console.ReadLine();
+                */
+
+            //======================================================================================================================================
+
+            /*
+             * 1)	Crie um programa que tenha uma variável double valorDaNotaFiscal e, de acordo com esse valor,
+             * o imposto deve ser calculado. As regras de cálculo são:
+            Se o valor for menor que 999, o imposto deve ser de 2%
+            Se o valor estiver entre 1000 e 2999, o imposto deve ser de 2.5%
+            Se o valor estiver entre 3000 e 6999, o imposto deve ser de 2.8%
+            Se for maior ou igual a 7000, o imposto deve ser de 3% 
+            E no final mostre o resultado
+             */
+
+            double d_valorDaNotaFiscal = 0;
+            double d_valorComImposto = 0;
+            double d_valorDiferença = 0;
+
+            Console.WriteLine("Digite o valor da nota fiscal emitida");
+            d_valorDaNotaFiscal = Convert.ToInt16(Console.ReadLine());
+
+            if (d_valorDaNotaFiscal > 0 && d_valorDaNotaFiscal < 1000)
+            {
+                d_valorComImposto = d_valorDaNotaFiscal * 1.2;
+                d_valorDiferença = d_valorComImposto - d_valorDaNotaFiscal;
+                Console.WriteLine("O valor total com imposto será de {0:c}, sendo assim {1:c} de imposto", d_valorComImposto, d_valorDiferença);
+            }
+
+            else
+            {
+                if (d_valorDaNotaFiscal > 1000 && d_valorDaNotaFiscal < 3000)
+                {
+                    d_valorComImposto = d_valorDaNotaFiscal * 1.25;
+                    d_valorDiferença = d_valorComImposto - d_valorDaNotaFiscal;
+                    Console.WriteLine("O valor total com imposto será de {0:c}, sendo assim {1:c} de imposto", d_valorComImposto, d_valorDiferença);
+                }
+                else
+                {
+                    if (d_valorDaNotaFiscal > 3000 && d_valorDaNotaFiscal <= 6999)
+                    {
+                        d_valorComImposto = d_valorDaNotaFiscal * 1.28;
+                        d_valorDiferença = d_valorComImposto - d_valorDaNotaFiscal;
+                        Console.WriteLine("O valor total com imposto será de {0:c}, sendo assim {1:c} de imposto", d_valorComImposto, d_valorDiferença);
+                    }
+                    else
+                    {
+                        if (d_valorDaNotaFiscal > 7000)
+                        {
+                            d_valorComImposto = d_valorDaNotaFiscal * 1.3;
+                            d_valorDiferença = d_valorComImposto - d_valorDaNotaFiscal;
+                            Console.WriteLine("O valor total com imposto será de {0:c}, sendo assim {1:c} de imposto", d_valorComImposto, d_valorDiferença);
+                        }
+                        else
+                        {
+                            Console.WriteLine("O valor digitado não esta dentro dos valores permitidos");
+                        }
+                    }
+                }
+            }
+            Console.ReadLine();
+
+            /*
+                2)	Crie uma calculadora que execute as quatro operações matemáticas. Através de um menu o usuário 
+                poderá escolher: 
+                1 – Adição
+                3 – Divisão
+                4 – Multiplicação
+                5 – Para sair do programa.
+
+            */
+
+            Console.Clear();
+            double d_Result = 0;
+            string s_Opera = "";
+            double d_PriNum = 0;
+            double d_SegNum = 0;
+
+            Console.WriteLine("Entre com a Operação\n");
+            Console.WriteLine("Tecle 1 para adição.");
+            Console.WriteLine("Tecle 2 para subtração.");
+            Console.WriteLine("Tecle 3 para divisão.");
+            Console.WriteLine("Tecle 4 para multiplicação.\n");
+            Console.WriteLine("Tecle 5 para sair do programa.\n");
+
+            Console.Write("Entre com sua Operação: ");
+            s_Opera = Console.ReadLine().ToUpper();
+
+            if (s_Opera == "1" || s_Opera == "2" || s_Opera == "3" || s_Opera == "4" || s_Opera == "5")
+            {
+                Console.Write("Entre com o primeiro número: ");
+                d_PriNum = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write("Entre com o segundo número: ");
+                d_SegNum = Convert.ToDouble(Console.ReadLine());
+
+                if (s_Opera == "1")
+                {
+                    d_Result = d_PriNum + d_SegNum;
+                }
+                else
+                {
+                    if (s_Opera == "2")
+                    {
+                        d_Result = d_PriNum - d_SegNum;
+                    }
+                    else
+                    {
+                        if (s_Opera == "3")
+                        {
+                            if (d_SegNum > 0)
+                            {
+                                d_Result = d_PriNum / d_SegNum;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Não existe divisão por ZERO no campo dos Reais.");
+                            }
+                        }
+                        else
+                        {
+                            if (s_Opera == "4")
+                            {
+                                d_Result = d_PriNum * d_SegNum;
+                            }
+                            else
+                            {
+                                if (s_Opera == "5")
+                                {
+                                    Console.ReadLine();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Operação invalida.");
+                                }
+                            }
+                        }
+                    }
+                }
+                Console.WriteLine("O resultado da operação é {0}", d_Result);
+            }
+            else
+            {
+                Console.WriteLine("Operação invalida.");
+            }
+            Console.ReadLine();
+
+        }
+        
+    }
+}
