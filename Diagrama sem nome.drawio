@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.8">
   <diagram name="Página-1" id="wkwMZMTxy4xbMyuyJt76">
-    <mxGraphModel dx="1049" dy="552" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1259" dy="662" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -109,7 +109,7 @@
         <mxCell id="YKHne9TACWLXyV4MfOwQ-27" value="itens da reserva" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="808" y="336" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="YKHne9TACWLXyV4MfOwQ-28" value="codigo reserva" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="YKHne9TACWLXyV4MfOwQ-28" value="codigo reserva." style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="928" y="336" width="64" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YKHne9TACWLXyV4MfOwQ-29" value="codigo" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
